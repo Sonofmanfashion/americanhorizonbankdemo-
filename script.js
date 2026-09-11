@@ -1,1 +1,3 @@
-document.querySelector('.menu').addEventListener('click',()=>{const n=document.querySelector('nav');n.style.display=n.style.display==='flex'?'none':'flex';n.style.flexDirection='column';n.style.position='absolute';n.style.right='4%';n.style.top='62px';n.style.background='#080808';n.style.padding='18px'});
+const form=document.getElementById('demoForm');const dashboard=document.getElementById('dashboard');const login=document.getElementById('demo-login');const nameEl=document.getElementById('welcomeName');const logout=document.getElementById('logout');
+form.addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('demoName').value.trim()||'Guest';nameEl.textContent=name;dashboard.classList.remove('hidden');dashboard.scrollIntoView({behavior:'smooth'});});
+logout.addEventListener('click',()=>{dashboard.classList.add('hidden');login.scrollIntoView({behavior:'smooth'});});
