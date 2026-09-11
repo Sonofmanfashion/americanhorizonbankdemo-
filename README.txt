@@ -1,0 +1,1 @@
+Son of Man Fashion Intuition website. Upload index.html, styles.css and script.js to the GitHub repository.
