@@ -1,3 +1,12 @@
 const form=document.getElementById('demoForm');const dashboard=document.getElementById('dashboard');const login=document.getElementById('demo-login');const nameEl=document.getElementById('welcomeName');const logout=document.getElementById('logout');
 form.addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('demoName').value.trim()||'Guest';nameEl.textContent=name;dashboard.classList.remove('hidden');dashboard.scrollIntoView({behavior:'smooth'});});
 logout.addEventListener('click',()=>{dashboard.classList.add('hidden');login.scrollIntoView({behavior:'smooth'});});
+const contactForm = document.querySelector('.contact-form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thank you! This is a fictional demo, so no message was sent.');
+    contactForm.reset();
+  });
+}
