@@ -3,10 +3,4 @@ form.addEventListener('submit',e=>{e.preventDefault();const name=document.getEle
 logout.addEventListener('click',()=>{dashboard.classList.add('hidden');login.scrollIntoView({behavior:'smooth'});});
 const contactForm = document.querySelector('.contact-form');
 
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Thank you! This is a fictional demo, so no message was sent.');
-    contactForm.reset();
-  });
-}
+ 
